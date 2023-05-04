@@ -17,7 +17,7 @@ const Blog = () => {
     return (
         <div className='py-10 container '>
             <div>
-              <button className='flex items-center text-xl font-semibold bg-amber-500 py-2 px-4 rounded-md' onClick={downloadAsPdf}>Download PDF<ArrowDownTrayIcon className='h-4 w-4 ml-3'/></button>
+              <button className='flex items-center text-xl font-semibold bg-emerald-600 py-2 px-4 rounded-md' onClick={downloadAsPdf}>Download PDF<ArrowDownTrayIcon className='h-4 w-4 ml-3'/></button>
             </div>
         
             <div className='items-center'>
