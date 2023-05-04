@@ -29,7 +29,7 @@ const Banner = () => {
     <div className='w-full relative'>
       <img
         onLoad={() => setShowBlur(false)}
-        className={`w-full h-height-sm md:h-height-md ${showBlur ? "blur-xl" : "blur-0"} brightness-40 transition duration-2000`}
+        className={`w-full h-height-sm md:h-height-md ${showBlur ? "blur-xl" : "blur-0"} brightness-65 transition duration-2000`}
         src="https://images.startups.co.uk/wp-content/uploads/2017/12/How-to-start-a-restaurant.jpg"
         alt=""
       />
@@ -38,7 +38,7 @@ const Banner = () => {
         <div className='text-white'>
         <h1 className='text-2xl md:text-5xl text-yellow-200 font-bold m-7 md:m-10'>Choose From Thousands of <br />
         Recipes & Enjoy Cooking!!!</h1>
-          <p className='md:text-2xl font-bold m-7 text-yellow-200 md:m-10 '>We serve delicious food that will satisfy your taste buds</p>
+          <p className='md:text-2xl font-bold m-7 text-lime-200 md:m-10 '>We serve delicious food that will satisfy your taste buds</p>
         </div>
       </div>
     </div>

@@ -10,9 +10,7 @@ const Footer = () => {
     <a className="link link-hover">About us</a> 
     <a className="link link-hover">Contact</a> 
     <a className="link link-hover">Jobs</a> 
-    <p className="font-semibold text-base text-gray-500 dark:text-gray-300">
-             © 2023  Chef's Universe
-     </p>
+   
     
   </div> 
   <div className='text-white font-bold'>
@@ -22,6 +20,9 @@ const Footer = () => {
     <a className="link link-hover">Cookie policy</a>
   </div> 
   <div>
+  <p className="font-semibold text-base text-gray-500 dark:text-gray-300">
+             © 2023  Chef's Universe
+     </p>
   <p className="text-sm md:text-base lg:text-lg text-gray-500 dark:text-gray-400 font-medium mt-4 w-[320px] md:w-[391px]">
               Send us Email
             </p>

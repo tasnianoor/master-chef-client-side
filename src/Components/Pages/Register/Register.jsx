@@ -48,7 +48,7 @@ const Register = () => {
         {
             loading && <Loader/>
         }
-         <div className='mx-auto p-10 w-5/12 '>
+         <div className='mx-auto p-5 md:p-10 md:w-5/12 '>
             <form onSubmit={handleSubmit} className='p-10 bg-base-200 rounded-md border-2'>
                 <p className='text-xl font-bold text-black mb-5'>Register</p>
                 <div className="flex flex-col">
@@ -69,7 +69,7 @@ const Register = () => {
                 </div>
                 <p className='text-red-700 mt-3'>{error}</p>
                 <button className='bg-btn-color w-full py-3 text-xl rounded-md my-5 font-bold'>Register</button>
-                <p className='text-center'>Already have an account? <Link to='/login'><span className='text-btn-color underline'>Login</span></Link></p>
+                <p className='text-center'>Already have an account? <Link to='/login' className='link text-btn-color'>Login</Link></p>
             </form>
         </div>
         </>

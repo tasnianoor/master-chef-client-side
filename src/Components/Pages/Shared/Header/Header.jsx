@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Banner from '../../Home/Banner/Banner';
 import { AuthContext } from '../../../Provider/AuthProvider';
 import { UserCircleIcon } from '@heroicons/react/24/solid';
 import BrandIcon from './../../../../assets/icons/brandicon.png'

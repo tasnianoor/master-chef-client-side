@@ -38,8 +38,8 @@ const ChefCard = ({ cf }) => {
     const { id, name, picture, yearsOfExperience, numberOfRecipes, likes} = cf
 
     return (
-        <div className="w-96 glass rounded-xl">
-            <img onLoad={() => setShowBlur(false)} className={`rounded-t-xl w-full h-64 ${showBlur ? "blur-xl" : "blur-0"} transition duration-2000`} src={picture} alt="" />
+        <div className="w-full glass rounded-xl img-fluid">
+            <img onLoad={() => setShowBlur(false)} className={ `rounded-t-xl w-full h-64 ${showBlur ? "blur-xl" : "blur-0"} transition duration-2000`} src={picture} alt="" />
             <div className="card-body h-46">
                 <h2 className="card-title">{name}</h2>
                 <div className='mt-2'>

@@ -29,3 +29,4 @@ const TraditionalFood = () => {
 };
 
 export default TraditionalFood;
+

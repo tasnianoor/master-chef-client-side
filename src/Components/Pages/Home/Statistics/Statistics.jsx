@@ -1,5 +1,4 @@
 import React from "react";
-
 const Statistics = () => {
   return (
     <div className="pt-12 sm:pt-16">
@@ -16,7 +15,7 @@ const Statistics = () => {
       </div>
       <div className="mt-10 pb-12 sm:pb-16">
         <div className="relative">
-          <div className="absolute inset-0 h-1/2" />
+          <div className="absolute inset-0 h-1/2"/>
           <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-4xl">
               <dl className="rounded-lg shadow-lg sm:grid sm:grid-cols-3 bg-gray-100 dark:bg-gray-900">
