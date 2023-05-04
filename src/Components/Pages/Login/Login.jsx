@@ -88,13 +88,13 @@ const Login = () => {
                     <button className='bg-btn-color w-full py-3 text-xl rounded-md my-5 font-bold'>Login</button>
                     <p className='text-center'>Don't have an account? <Link to='/register' className='link text-btn-color'>Create Account</Link></p>
                 </form>
-                <div onClick={handleGoogleSignIn} className='flex w-10/12 border-2 rounded-3xl mx-auto p-2 my-5 justify-centen items-center bg-purple-600 hover:bg-base-200 cursor-pointer'>
+                <div onClick={handleGoogleSignIn} className='flex w-10/12 border-2 rounded-3xl mx-auto p-2 my-5 justify-between items-center bg-purple-600 hover:bg-base-200 cursor-pointer'>
                     <FaGoogle className='h-6 w-6' />
                     <p className='font-bold mx-auto'>Continue with Google</p>
                 </div>
                 <div onClick={handleGithubLogin} className='flex w-10/12 border-2 rounded-3xl mx-auto p-2 my-5 justify-between items-center bg-purple-600 hover:bg-base-200 cursor-pointer'>
                     <FaGithub className='h-6 w-6' />
-                    <p className='font-bold mx-auto'>Continue with Github</p>
+                    <p className='font-bold mx-auto '>Continue with Github</p>
                 </div>
             </div>
         </>
