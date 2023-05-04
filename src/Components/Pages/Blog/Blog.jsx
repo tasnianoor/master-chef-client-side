@@ -16,13 +16,15 @@ const Blog = () => {
       };
     return (
         <div className='py-10 container '>
-            <div className='flex justify-around items-center'>
-                <div>
-            <p className='text-center my-5 font-blog-qst-font-family font-extrabold text-2xl'>Question & Answer</p>
+            <div>
+              <button className='flex items-center text-xl font-semibold bg-amber-500 py-2 px-4 rounded-md' onClick={downloadAsPdf}>Download PDF<ArrowDownTrayIcon className='h-4 w-4 ml-3'/></button>
             </div>
-             <div>
-              <button className='flex items-center text-xl font-semibold bg-blog-ans-color py-2 px-4 rounded-md' onClick={downloadAsPdf}>Download PDF<ArrowDownTrayIcon className='h-4 w-4 ml-3'/></button>
-              </div>
+        
+            <div className='items-center'>
+                <div>
+            <p className='text-center my-5 font-blog-qst-font-family font-extrabold text-2xl text-red-700'>Question & Answer</p>
+            </div>
+             
             </div>
             <div id='blog' >
         
@@ -35,12 +37,11 @@ const Blog = () => {
             <p>
                 <span className="text-blog-ans-color font-extrabold text-xl font-blog-qst-font-family mb-5">Answer:</span>
                 <br />
-                In React, components can handle user input in two ways: controlled or uncontrolled. They are:
-            </p>
-            <ol>
-                <li>Controlled components use React state to manage the input's value. This gives us more control over the input's behavior and allow us to perform additional validation or manipulation of the input's value.</li>
-                <li>Uncontrolled components let the browser handle the input's value. They are simpler to use and require less code, but offer less control and flexibility.</li>
-            </ol>
+                 Uncontrolled components are managed by the DOM, while
+                 controlled components are managed by React. Controlled components
+                 provide more control and can handle input validation and state
+                 changes.
+                 </p>
             <p>The choice between the two depends on our specific needs and requirements.</p>
         </div>
         <br />
@@ -68,14 +69,11 @@ const Blog = () => {
             <p>
                 <span className="text-blog-ans-color font-extrabold text-xl font-blog-qst-font-family mb-5">Answer:</span>
                 <br />
-                Node.js is the underlying technology that allows you to run JavaScript code on the server, while Express.js is a framework that sits on top of Node.js and provides a set of tools and features for building web applications and APIs. Here are some key differences between Node.js and Express.js:
+                Node.js is a JavaScript runtime environment that enables
+              developers to run JavaScript on the server-side, while Express.js
+              is a web application framework built on top of Node.js, providing
+              additional features for building web applications.
             </p>
-            <ol>
-                <li>Node.js is a runtime environment for JavaScript, while Express.js is a web application framework built on top of Node.js.</li>
-                <li>Node.js provides core features for building server-side applications, while Express.js provides additional features for building web applications and APIs</li>
-                <li>Node.js can be used to build a wide range of server-side applications, while Express.js is primarily used for building web applications and APIs.</li>
-              
-            </ol>
                 
         </div>
         <br />
