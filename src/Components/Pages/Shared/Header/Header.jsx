@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import Banner from '../../Home/Banner/Banner';
 import { AuthContext } from '../../../Provider/AuthProvider';
 import { UserCircleIcon } from '@heroicons/react/24/solid';
+import BrandIcon from './../../../../assets/icons/brandicon.png'
 import Tooltip from '../Tooltip/Tooltip';
 
 const Header = () => {
@@ -25,7 +26,13 @@ const Header = () => {
     }
     return (
         <header className='px-5 mb-5 flex justify-between items-center bg-base-200 py-3 md:py-5'>
-            <p className='text-xl md:text-2xl font-bold'>Chef's Universe</p>
+        
+            <p className='text-xl md:text-3xl font-bold flex flex-row space-x-2 text-warning'> <img
+                        src={BrandIcon}
+                        width="40"
+                        height="40"
+                        alt="React Bootstrap logo"
+                    />Chef's Universe</p>
             <nav className=' flex flex-row items-center space-x-3 md:space-x-8 font-bold'>
                 <Link style={location.pathname === '/' ? activeStyle : null} className='hover:text-btn-color duration-200' to='/'>Home</Link>
                 <Link style={location.pathname === '/blog' ? activeStyle : null} className='hover:text-btn-color duration-200' to='/blog'>Blog</Link>

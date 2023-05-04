@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Banner = () => {
     return (
       <div className='w-full relative'>
@@ -12,6 +13,9 @@ const Banner = () => {
           </div>
         </div>
       </div>
+
+
+      
 
     );
   };

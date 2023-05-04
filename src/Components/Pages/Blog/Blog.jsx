@@ -2,7 +2,6 @@ import React from 'react';
 import { ArrowDownTrayIcon} from '@heroicons/react/24/solid';
 import html2pdf from 'html2pdf.js';
 
-/**please install: npm install html2pdf.js */
 
 const Blog = () => {
 
@@ -16,13 +15,17 @@ const Blog = () => {
         html2pdf().set(options).from(element).save();
       };
     return (
-        <div className='py-10'>
+        <div className='py-10 container '>
             <div className='flex justify-around items-center'>
-            <p className='text-center my-5 font-blog-qst-font-family font-extrabold text-3xl'>Question&Answer</p>
-            <button className='flex items-center text-xl font-semibold bg-blog-ans-color py-2 px-4 rounded-md' onClick={downloadAsPdf}>Download PDF<ArrowDownTrayIcon className='h-4 w-4 ml-3'/></button>
+                <div>
+            <p className='text-center my-5 font-blog-qst-font-family font-extrabold text-2xl'>Question & Answer</p>
+            </div>
+             <div>
+              <button className='flex items-center text-xl font-semibold bg-blog-ans-color py-2 px-4 rounded-md' onClick={downloadAsPdf}>Download PDF<ArrowDownTrayIcon className='h-4 w-4 ml-3'/></button>
+              </div>
             </div>
             <div id='blog' >
-        {/* Question : 1 section */}
+        
         <div>
             <p>
                 <span className="font-blog-q st-font-family mb-5 text-blog-qst-color text-2xl font-extrabold ">Question : 1</span>
@@ -41,7 +44,7 @@ const Blog = () => {
             <p>The choice between the two depends on our specific needs and requirements.</p>
         </div>
         <br />
-        {/* Question : 2 section */}
+        
         <div>
             <p>
                 <span className="font-blog-qst-font-family mb-5 text-blog-qst-color text-2xl font-extrabold ">Question : 2 </span>
@@ -55,7 +58,7 @@ const Blog = () => {
             </p>
         </div>
         <br />
-        {/* Question : 3 section */}
+    
         <div>
             <p>
                 <span className="font-blog-qst-font-family mb-5 text-blog-qst-color text-2xl font-extrabold ">Question : 3</span>
@@ -76,7 +79,7 @@ const Blog = () => {
                 
         </div>
         <br />
-        {/* Question : 4 section */}
+
         <div>
             <p>
                 <span className="font-blog-qst-font-family mb-5 text-blog-qst-color text-2xl font-extrabold ">Question : 4</span>
@@ -88,9 +91,7 @@ const Blog = () => {
                 <br />
                 A custom hook is a function in React that allows us to reuse stateful logic between components, making it easier to create reusable and composable code. It's a way to extract and reuse common code that manages stateful logic and side effects, by leveraging existing React hooks.Its very important that we use in time of need. 
 
-                <br />
-
-               I will create a custom hook for tasting and share components. Creating a custom hook in React can help me to improve reusability, organization, abstraction, and testing of my code. It allow me to encapsulate complex logic and state management into a reusable function, which can be easily shared across components and projects.
+                
             </p>
         </div>
             </div>
@@ -100,3 +101,4 @@ const Blog = () => {
 };
 
 export default Blog;
+

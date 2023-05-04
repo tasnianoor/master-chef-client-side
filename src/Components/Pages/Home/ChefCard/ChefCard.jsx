@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRightIcon} from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
+import { FaThumbsUp } from 'react-icons/fa';
 
 const ChefCard = ({ cf }) => {
     const { id, name, picture, yearsOfExperience, numberOfRecipes, likes} = cf
@@ -15,7 +16,11 @@ const ChefCard = ({ cf }) => {
                 <p className='font-semibold'>Number of Recipes : <span className='font-normal'>{numberOfRecipes} Recipes</span></p>
                 </div>
                 <div className="mt-5 mb-0 flex justify-between items-center">
-                    <p className='font-semibold'>Likes: <span className='font-normal'>{likes}</span></p>
+                    {/* <p className='font-semibold'><FaThumbsUp></FaThumbsUp><span className='font-normal'>{likes}</span></p> */}
+                    <div className="badge badge-outline gap-2">
+                    <FaThumbsUp></FaThumbsUp>
+                    <span>{likes}</span>
+                    </div>
                     <Link to={`/chefRecipe/${id}`}><button className="bg-btn-color py-2 px-4 rounded-md font-semibold flex items-center">View Recipes<ArrowRightIcon className='h-5 w-5 ml-2'/></button></Link>
                 </div>
             </div>
