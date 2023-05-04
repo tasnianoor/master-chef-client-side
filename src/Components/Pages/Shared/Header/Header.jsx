@@ -25,7 +25,7 @@ const Header = () => {
         color: '#F9A51A'
     }
     return (
-        <header className='px-5 mb-5 flex justify-between items-center bg-base-200 py-3 md:py-5'>
+        <header className='px-5 mb-5 flex justify-between items-center bg-amber-100 py-3 md:py-5'>
         
             <p className='text-xl md:text-3xl font-bold flex flex-row space-x-2 text-warning'> <img
                         src={BrandIcon}
