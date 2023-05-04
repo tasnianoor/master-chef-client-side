@@ -4,7 +4,7 @@ const Statistics = () => {
     <div className="pt-12 sm:pt-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl">
+          <h2 className="text-3xl font-bold text-red-700 tracking-tight  sm:text-4xl">
             Loved by new customers every hour
           </h2>
           <p className="mt-3 text-xl text-gray-500 sm:mt-4">

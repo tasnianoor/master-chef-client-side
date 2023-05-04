@@ -48,7 +48,7 @@ const Chef = () => {
     return (
 
     <div className='w-full mt-16'>
-        <p className='text-4xl font-bold text-center'>Our Korean Chefs</p>
+        <p className='text-4xl font-bold text-center text-red-700'>Our Korean Chefs</p>
         <div className='w-full grid justify-center sm:grid-cols-1 md:grid-cols-3 gap-4 my-10'>
             {
                 chef.map(cf => <ChefCard
