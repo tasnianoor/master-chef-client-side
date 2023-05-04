@@ -26,10 +26,10 @@ const Header = () => {
     return (
         <header className='px-5 mb-5 flex justify-between items-center bg-amber-100 py-3 md:py-5'>
         
-            <p className='text-xl md:text-3xl font-bold flex flex-row space-x-2 text-warning'> <img
+            <p className='text-xl md:text-2xl font-bold flex flex-row space-x-2 text-red-700'> <img
                         src={BrandIcon}
-                        width="40"
-                        height="40"
+                        width="30"
+                        height="30"
                         alt="React Bootstrap logo"
                     />Chef's Universe</p>
             <nav className=' flex flex-row items-center space-x-3 md:space-x-8 font-bold'>

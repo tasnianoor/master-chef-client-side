@@ -23,22 +23,22 @@
 import React, { useState } from 'react';
 
 const Banner = () => {
-  const [showBlur, setShowBlur] = useState(true);
+  
 
   return (
     <div className='w-full relative'>
       <img
         onLoad={() => setShowBlur(false)}
-        className={`w-full h-height-sm md:h-height-md ${showBlur ? "blur-xl" : "blur-0"} brightness-65 transition duration-2000`}
-        src="https://images.startups.co.uk/wp-content/uploads/2017/12/How-to-start-a-restaurant.jpg"
+        className={`w-full h-height-sm md:h-height-md backdrop-blur-md `}
+        src="https://c0.wallpaperflare.com/preview/184/811/591/blur-bread-rolls-counter-cup.jpg"
         alt=""
       />
 
       <div className='absolute inset-0 flex items-center justify-center'>
         <div className='text-white'>
-        <h1 className='text-2xl md:text-5xl text-yellow-200 font-bold m-7 md:m-10'>Choose From Thousands of <br />
+        <h1 className='text-2xl md:text-5xl text-teal-200 font-bold m-7 md:m-10'>Choose From Thousands of <br />
         Recipes & Enjoy Cooking!!!</h1>
-          <p className='md:text-2xl font-bold m-7 text-lime-200 md:m-10 '>We serve delicious food that will satisfy your taste buds</p>
+          <p className='md:text-2xl font-bold m-7 text-teal-100 md:m-10 '>Browse through over 650,000 tasty recipes...</p>
         </div>
       </div>
     </div>
