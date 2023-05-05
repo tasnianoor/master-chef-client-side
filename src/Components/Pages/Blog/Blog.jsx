@@ -28,75 +28,30 @@ const Blog = () => {
             </div>
             <div id='blog' >
         
-        <div>
-            <p>
-                <span className="font-blog-q st-font-family mb-5 text-blog-qst-color text-2xl font-extrabold ">Question : 1</span>
-                <br /> 
-                <span className='qus font-blog-qus-font-family font-extrabold text-xl'>Tell us the differences between uncontrolled and controlled components? </span>
-            </p>
-            <p>
-                <span className="text-blog-ans-color font-extrabold text-xl font-blog-qst-font-family mb-5">Answer:</span>
-                <br />
-                 Uncontrolled components are managed by the DOM, while
-                 controlled components are managed by React. Controlled components
-                 provide more control and can handle input validation and state
-                 changes.
-                 </p>
-            <p>The choice between the two depends on our specific needs and requirements.</p>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
+          <div className='border p-3 md:p-5 rounded-lg bg-pink-100'>
+            <p className='font-medium'>Differences between uncontrolled and controlled components?</p>
+            <p className='mt-3'><span className=''>Answer:</span>Uncontrolled components are managed by the DOM, while controlled components are managed by React. In uncontrolled component while user interacts then its internal state updated directly. But controlled component controlled by calling function and using props.</p>
+          </div>
+          <div className='border p-3 md:p-5 rounded-lg bg-pink-100'>
+            <p className='font-medium'>How to validate React props using PropTypes?</p>
+            <p className='mt-3'><span className=''>Answer:</span>PropTypes is a package. Which usually validate react component's props. Developer can use it by installing via npm or yearn. If a component pass invalid type of props then PropTypes will throw and error and also console an alert.</p>
+          </div>
+          <div className='border p-3 md:p-5 rounded-lg bg-pink-100'>
+            <p className='font-medium'>Differences between nodejs and express js.</p>
+            <p className=''><span className=''>Answer:  </span> Node.js is a JavaScript runtime environment that enables developers to run JavaScript on the server-side, while   Express.js is a web application framework built on top of Node.js, providing
+            additional features for building web applications.</p>
+          </div>
+          <div className='border p-3 md:p-5 rounded-lg bg-pink-100'>
+            <p className='font-medium'>What is a custom hook, and why will you create a custom hook?</p>
+            <p className=''><span className=''>Answer:</span>Custom hooks are reusable functions in React that allow developers to extract and share logic between components. Developers create custom hooks to reduce code duplication and
+            improve code readability and maintainability.</p>
+          </div>
         </div>
-        <br />
-        
-        <div>
-            <p>
-                <span className="font-blog-qst-font-family mb-5 text-blog-qst-color text-2xl font-extrabold ">Question : 2 </span>
-                <br /> 
-                <span className='qus font-blog-qus-font-family font-extrabold text-xl'>How to validate React props using PropTypes? </span>
-            </p>
-            <p>
-                <span className="text-blog-ans-color font-extrabold text-xl font-blog-qst-font-family mb-5">Answer:</span>
-                <br />
-                React PropTypes is a tool that help us check if the data (props) we are passing into a component is the correct type and format. It's like a spell-checker that prevents us from making mistakes. By using PropTypes, we can catch errors and bugs early in the development process, which can save us time and effort in the long run.
-            </p>
-        </div>
-        <br />
-    
-        <div>
-            <p>
-                <span className="font-blog-qst-font-family mb-5 text-blog-qst-color text-2xl font-extrabold ">Question : 3</span>
-                <br /> 
-                <span className='qus font-blog-qus-font-family font-extrabold text-xl'>Tell us the difference between nodejs and express js? </span>
-            </p>
-            <p>
-                <span className="text-blog-ans-color font-extrabold text-xl font-blog-qst-font-family mb-5">Answer:</span>
-                <br />
-                Node.js is a JavaScript runtime environment that enables
-              developers to run JavaScript on the server-side, while Express.js
-              is a web application framework built on top of Node.js, providing
-              additional features for building web applications.
-            </p>
-                
-        </div>
-        <br />
-
-        <div>
-            <p>
-                <span className="font-blog-qst-font-family mb-5 text-blog-qst-color text-2xl font-extrabold ">Question : 4</span>
-                <br /> 
-                <span className='font-blog-qus-font-family font-extrabold text-xl'>What is a custom hook, and why will you create a custom hook? </span>
-            </p>
-            <p>
-                <span className="text-blog-ans-color font-extrabold text-xl font-blog-qst-font-family mb-5">Answer: </span>
-                <br />
-                A custom hook is a function in React that allows us to reuse stateful logic between components, making it easier to create reusable and composable code. It's a way to extract and reuse common code that manages stateful logic and side effects, by leveraging existing React hooks.Its very important that we use in time of need. 
-
-                
-            </p>
-        </div>
-            </div>
+      </div>
 
     </div>
     );
 };
 
 export default Blog;
-

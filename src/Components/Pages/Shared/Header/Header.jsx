@@ -7,7 +7,7 @@ import Tooltip from '../Tooltip/Tooltip';
 
 const Header = () => {
     const location = useLocation()
-    const { user, signOutUser } = useContext(AuthContext);
+    const { user, signOutUser, setBgColor, bgColor } = useContext(AuthContext);
 
     const handleSignOut = () => {
         signOutUser()
@@ -25,20 +25,15 @@ const Header = () => {
     }
     return (
         <header className='px-5 mb-5 flex justify-between items-center bg-amber-100 py-3 md:py-5'>
-        
-            <p className='text-xl md:text-2xl font-bold flex flex-row space-x-2 text-red-700'> <img
-                        src={BrandIcon}
-                        width="30"
-                        height="30"
-                        alt="React Bootstrap logo"
-                    />Chef's Universe</p>
-            <nav className=' flex flex-row items-center space-x-3 md:space-x-8 font-bold'>
+            <p className='text-xl md:text-2xl font-bold flex flex-row space-x-2 text-red-700'> <img src={BrandIcon}  width="30"  height="30"  alt="React Bootstrap logo" />Recipe's Universe</p>
+            <nav className=' flex flex-row items-center space-x-3 md:space-x-8 font-semibold md:font-bold'>
+                
                 <Link style={location.pathname === '/' ? activeStyle : null} className='hover:text-btn-color duration-200' to='/'>Home</Link>
                 <Link style={location.pathname === '/blog' ? activeStyle : null} className='hover:text-btn-color duration-200' to='/blog'>Blog</Link>
                 {
                     user ? <div className='flex items-center space-x-2 md:space-x-4'>
-                        <Tooltip text={user.displayName}>{user.photoURL ? <img className='rounded-full h-6 w-6' src={user.photoURL} alt="" />  : <UserCircleIcon className='h-8 w-8' />}</Tooltip>
-                        <button onClick={handleSignOut} className='py-2 px-3 md:px-5 text-black rounded bg-btn-color'>Sign Out</button>
+                        <Tooltip text={user.displayName}><Link to='/profile'>{user.photoURL ? <img className='rounded-full h-6 w-6' src={user.photoURL} alt="" /> : <UserCircleIcon className='h-8 w-8' />}</Link></Tooltip>
+                        <button onClick={handleSignOut} className='py-2 px-3 md:px-5  text-black rounded bg-btn-color'>Sign Out</button>
                     </div> : <Link to='/login'><button className='py-2 px-3 md:px-5 text-black rounded bg-btn-color'>Login</button></Link>
                 }
 

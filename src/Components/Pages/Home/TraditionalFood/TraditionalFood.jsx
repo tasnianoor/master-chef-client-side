@@ -15,7 +15,7 @@ const TraditionalFood = () => {
 
     return (
         <div className='w-full my-15'>
-            <p className='mb-12 text-4xl text-red-700 text-center font-bold'>Visit Us For Our Traditional  Food</p>
+            <p className='mb-12 text-4xl text-red-700 text-center font-bold'>Our Most Popular Food</p>
             <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-2">
                 {
                     traditionalFood.map(tf => <TraditionalFoodCard

@@ -4,12 +4,11 @@ import { Link } from 'react-router-dom';
 import { FaThumbsUp } from 'react-icons/fa';
 
 const ChefCard = ({ cf }) => {
-    const [showBlur, setShowBlur] = useState(true);
     const { id, name, picture, yearsOfExperience, numberOfRecipes, likes} = cf
 
     return (
         <div className="w-full glass rounded-xl img-fluid">
-            <img onLoad={() => setShowBlur(false)} className={ `rounded-t-xl w-full h-64 ${showBlur ? "blur-xl" : "blur-0"} transition duration-2000`} src={picture} alt="" />
+            <img className='rounded-t-xl w-full h-64' src={picture} alt="" />
             <div className="card-body h-46">
                 <h2 className="card-title">{name}</h2>
                 <div className='mt-2'>
@@ -18,9 +17,9 @@ const ChefCard = ({ cf }) => {
                 </div>
                 <div className="mt-5 mb-0 flex justify-between items-center">
                 <div className="badge badge-outline gap-2">
-                  <FaThumbsUp></FaThumbsUp>
-                   <span>{likes}</span>
-                   </div>
+                 <FaThumbsUp></FaThumbsUp>
+                <span>{likes}</span>
+                 </div>
                     <Link to={`/chefRecipe/${id}`}><button className="bg-btn-color py-2 px-4 rounded-md font-semibold flex items-center">View Recipes<ArrowRightIcon className='h-5 w-5 ml-2'/></button></Link>
                 </div>
             </div>
